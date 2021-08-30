@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-JurosSimpComponent',
+  selector: 'app-jurossimp',
   templateUrl: './jurossimp.component.html',
   styleUrls: ['./jurossimp.component.css']
 })
 export class JurosSimpComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  c: number;
+  i: number;
+  t: number;
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  getJurosSimples() {
+    return this.c * this.i * this.t;
   }
-
 }
