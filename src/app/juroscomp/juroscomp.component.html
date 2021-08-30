@@ -1,0 +1,27 @@
+<div class="container-fluid">
+<label
+>Capital
+<input class="form-control" type="number" [(ngModel)]="c">
+</label>
+
+<label
+>Taxa de juros
+<input class="form-control" type="number" [(ngModel)]="i">
+</label>
+
+<label
+>Tempo
+<input class="form-control" type="number" [(ngModel)]="t">
+</label>
+<br>
+<table class="table">
+  <tr>
+    <th>Mês</th>
+    <th>Juros Composto</th>
+  </tr>
+  <tr *ngFor="let item of getValoresMes(); index as i">
+    <td>{{i}}</td>
+    <td>{{item}}</td>
+  </tr>
+</table>
+</div>
